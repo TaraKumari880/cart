@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .products, .cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .quantity button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .total {
+    font-weight: bold;
+    text-align: center;
+  }
+
+ 

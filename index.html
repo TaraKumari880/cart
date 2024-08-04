@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="products">
+          <h3>Products</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product-1</td>
+                <td>100</td>
+                <td class="quantity">
+                  <button onclick="updateQuantity(this, -1)">-</button>
+                  <span id="quantity-1">2</span>
+                  <button onclick="updateQuantity(this, 1)">+</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Product-2</td>
+                <td>200</td>
+                <td class="quantity">
+                  <button onclick="updateQuantity(this, -1)">-</button>
+                  <span id="quantity-2">3</span>
+                  <button onclick="updateQuantity(this, 1)">+</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Product-3</td>
+                <td>300</td>
+                <td class="quantity">
+                  <button onclick="updateQuantity(this, -1)">-</button>
+                  <span id="quantity-3">0</span>
+                  <button onclick="updateQuantity(this, 1)">+</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="cart">
+          <h3>Cart</h3>
+          <div id="cart-items"></div>
+          <div class="total">
+            Total: <span id="total-price">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container">
+        <div class="products">
+          <h2>Products</h2>
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+            <tr>
+              <td>Product-1</td>
+              <td>100</td>
+              <td class="quantity">
+                <button onclick="decreaseQuantity(0)">-</button>
+                <span id="quantity-0">0</span>
+                <button onclick="increaseQuantity(0)">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Product-2</td>
+              <td>200</td>
+              <td class="quantity">
+                <button onclick="decreaseQuantity(1)">-</button>
+                <span id="quantity-1">0</span>
+                <button onclick="increaseQuantity(1)">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Product-3</td>
+              <td>300</td>
+              <td class="quantity">
+                <button onclick="decreaseQuantity(2)">-</button>
+                <span id="quantity-2">0</span>
+                <button onclick="increaseQuantity(2)">+</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      
+        <div class="cart">
+          <h2>Cart</h2>
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td id="product-1"></td>
+              <td id="total-1"></td>
+            </tr>
+            <tr>
+              <td id="product-2"></td>
+              <td id="total-2"></td>
+            </tr>
+            <tr>
+              <td id="product-3"></td>
+              <td id="total-3"></td>
+            </tr>
+          </table>
+          <p>Total: <span id="total-cart">0</span></p> -->
+      
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
